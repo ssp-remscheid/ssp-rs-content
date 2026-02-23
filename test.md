@@ -1,1 +1,0 @@
-Burgleuchten 2026 auf Schloss Burg in Solingen und Remscheid gestartet: Lichtkunst, Klang und neue Museumsräume

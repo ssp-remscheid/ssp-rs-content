@@ -197,4 +197,4 @@ url  = "https://www.youtube.com/@lek-nrw7152"
           block = [['\[', '\]'], ['$$', '$$']]
           inline = [['\(', '\)']]
 
-
+ignoreFiles = ['^content/aktuelles/.*']

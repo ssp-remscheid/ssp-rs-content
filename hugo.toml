@@ -1,0 +1,200 @@
+baseURL = 'https://example.org/'
+locale = 'en-US'
+title = 'Stadtschulpflegschaft Remscheid'
+theme = 'ssp-rs.de'
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+
+  [[menus.main]]
+    name = 'Posts'
+    pageRef = '/posts'
+    weight = 20
+
+  [[menus.main]]
+    name = 'Tags'
+    pageRef = '/tags'
+    weight = 30
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = '0.146.0'
+
+
+[params]
+  # Kategorien verstecken!
+  hideCategories = true
+  # Logo anstatt Title im Schriftzug
+  logo = "img/logo-lek-nrw-black.png"      # Pfad relativ zu /static
+  showLogoOnHero = true
+
+  ## Impressum Variablen - Beginn
+  # Institution
+  impressum1 = "Stadtschulpflegschaft Remscheid"
+  # Verantwortlicher/Vorsitzender
+  impressum2 = "c/o Getrud-Bäumer-Gymnasium"
+  # Verantwortlicher/Vorsitzender
+  impressum21 = "z.Hd. "
+  impressum22 = "Jason Kannanthanathu"
+  # Adresse: Strasse und Hausnummer
+  impressum3 = "Hindenburgstrasse 42"
+  # Adresse: PLZ und Ort
+  impressum4 = "42853 Remscheid"
+  # E-Mailadresse
+  impressum5 = "vorstand (äffchen) ssp-rs (punkt) de"
+  ## Impressum Variablen - Ende 
+  header_image = "img/home-bg-lek-hero-hell.png"
+  SEOTitle = "LEK - Landeselternkonferenz NRW - Der Dachverband der Kreis und Stadtschulpflegschaften in NRW"
+  description = "LEK - Landeselternkonferenz NRW - Der Dachverband der Kreis und Stadtschulpflegschaften in NRW"
+  keyword = "LEK, Landeselternkonferenz, Landeselternkonferenz NRW, LEK NRW, Dachverband, Kreisschulpflegschaft, Stadtschulpflegschaft, Stadtschulpflegschaften NRW, Kreisschulpflegschaft NRW, Schulpflegschaft"
+  slogan = "Der Dachverband der Kreis und Stadtschulpflegschaften in NRW"
+  upstreamAttribution = true
+
+  image_404 = "img/404-bg.jpg"
+  title_404 = "Das war wohl nichts... 404"
+  omit_categories = false
+
+  
+  [params.social]
+  rss            = true 
+  #linkedin       = "https://www.linkedin.com/in/yourlinkedinid"
+  #mastodon      = "full profile url in mastodon"
+
+[[params.social_links]]
+name = "rss"
+icon = "bi-rss"
+url = "https://ssp-rs.de/index.xml"
+
+[[params.social_links]]
+name = "email"
+icon = "bi-envelope"
+url  = "mailto:(vorstand at ssp minus rs punkt de)"
+
+[[params.social_links]]
+name = "Facebook"
+icon = "bi-facebook"
+url  = "https://www.facebook.com/profile.php?id=61580853780892"
+
+[[params.social_links]]
+name = "Instagram"
+icon = "bi-instagram"
+url  = "https://www.instagram.com/ssprs.de/"
+
+[[params.social_links]]
+name = "Youtube"
+icon = "bi-youtube"
+url  = "https://www.youtube.com/@lek-nrw7152"
+
+
+[menu]
+  [[menu.main]]
+    name = "Über uns"
+    url = "/ueber-uns"
+    weight = 1
+  [[menu.main]]
+    name = "Vorstand"
+    url = "/ueber-uns/vorstand"
+    parent = "Über uns"
+    weight = 1 
+  [[menu.main]]
+    name = "Mitglieder"
+    url = "/ueber-uns/mitglieder"
+    parent = "Über uns"
+    weight = 2    
+  [[menu.main]]
+    name = "Veroeffentlichungen"
+    url = "/veroeffentlichungen"
+    weight = 1
+  #[[menu.main]]
+  #  name = "Offene Briefe"
+  #  url = "/veroeffentlichungen/offene-briefe"
+  #  parent = "Veroeffentlichungen"
+  #  weight = 1 
+  [[menu.main]]
+    name = "Pressemeldungen"
+    url = "/veroeffentlichungen/pressemeldungen"
+    parent = "Veroeffentlichungen"
+    weight = 2    
+  #[[menu.main]]
+  #  name = "Schulen"
+  #  url = "/schulen"
+  #  weight = 1
+  #[[menu.main]]
+  #  name = "Tag der offenen Tür"
+  #  url = "/schulen/tag-der-offenen-tuer"
+  #  parent = "Schulen"
+  #  weight = 1 
+  [[menu.main]]
+    name = "Pressemeldungen"
+    url = "/veroeffentlichungen/pressemeldungen"
+    parent = "Veroeffentlichungen"
+    weight = 2    
+
+  #[[menu.main]]
+  #  name = "Links"
+  #  url = "/links"
+  #  weight = 1
+  #[[menu.main]]
+  #  name = "Verbaende"
+  #  url = "/links/verbaende"
+  #  parent = "Links"
+  #  weight = 1 
+  #[[menu.main]]
+  #  name = "Schulverwaltng"
+  #  url = "/links/schulverwaltung"
+  #  parent = "Links"
+  #  weight = 2    
+
+
+ # Footer 
+  [[menu.footer]] 
+    name = "Impressum" 
+    url = "/impressum/" 
+    weight = 4 
+  
+  [[menu.footer]] 
+    name = "Datenschutz" 
+    url = "/datenschutz/" 
+    weight = 3 
+
+  [[menu.footer]] 
+    name = "Satzung" 
+    url = "/satzung/" 
+    weight = 1
+
+  # Footer 
+  [[menu.hidden]] 
+    name = "Kontakt" 
+    url = "/kontakt/" 
+    weight = 2
+    pre = "hidden"
+  
+  [[menu.hidden]]
+    name = "Arbeitsgruppen"
+    url = "/ueber-uns/arbeitsgruppen"
+    parent = "Über uns"
+    weight = 2
+    pre = "hidden"
+  
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 6
+    startLevel = 2
+    ordered = true
+  [markup.highlight]
+    style = "dracula"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+
+

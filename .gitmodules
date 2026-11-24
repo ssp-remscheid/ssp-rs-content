@@ -1,0 +1,3 @@
+[submodule "themes/ssp-rs.de"]
+	path = themes/ssp-rs.de
+	url = git@github.com:ssp-remscheid/ssp-rs-theme.git
